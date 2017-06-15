@@ -1,0 +1,266 @@
+#map {
+
+	width: 80%;
+	height: 400px;
+	background-color: grey;
+	margin: 0 auto;
+}
+ul {
+	list-style: none;
+}
+.chart {
+	height: 300px;
+}
+.container-fluid {
+	background: url("../images/rainbowtrout.jpg")no-repeat;
+	background-size: 1200px;
+	background-position: center;
+	display: block;
+	height: 800px;
+	overflow: scroll;
+}
+.navbar-default {
+  background-color: rgba(0,0,0,.5);
+  color: white;
+}
+.navbar-brand {
+  color: white;
+
+}
+
+.navbar-default .navbar-nav>li>a{
+  color: white;
+}
+
+.navbar-default .navbar-brand{
+  color: white;
+  font-size: 25px;
+}
+
+h1, h2, h3, h4, p, li {
+	color: white;
+}
+
+.spots {
+	font-size: 20px;
+}
+
+.hatches {
+	background: url("../images/hatch_chart.jpg")no-repeat;
+	background-size: 605px;
+	background-position: center;
+	display: block;
+	height: 800px;
+}
+
+.patterns {
+  background: url("../images/flypatterns1.jpg")no-repeat;
+  background-size: 600px;
+  background-position: center;
+  display: block;
+  height: 600px;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  margin: 0 1px 0 1px;
+  height: 250px;
+  margin-top: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  flex-grow: 1;
+  border-radius: 5px;
+}
+
+.loca-container {
+	background-color: rgba(0,0,0,.5);
+	padding: 12px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+  border: 1px solid #e7e7e7;
+}
+
+.dataTab {
+	background-color: rgba(255,255,255,.5);
+}
+
+/*LANDING PAGE STYLES*/
+.frontlanding {
+	position: absolute;
+	z-index: 100;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%;
+  }
+}
+.text {
+    font-family: 'calibri';
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;  
+    color: white;
+    background-color: rgba(100,100,100,.6);
+    border-radius: 10px; 
+    line-height: 40px;
+    padding: 15px;
+}
+
+#title {
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 100px;
+    opacity: 0.9;
+    color: white;
+    text-shadow:
+    -1px -1px 0 rgba(0,,0,1),
+    1px -1px 0 rgba(0,0,0,1),
+    -1px 1px 0 rgba(0,0,0,1),
+    1px 1px 0 rgba(0,0,0,1);
+}
+
+.homebutton {
+    background-color: #FFFFFF;
+    display:block;
+    margin: 0 auto;
+  /*  position: relative;*/
+    bottom: 3em;
+    width: 20%;
+    height: 3em;
+    border-radius: 7px;
+    opacity: 0.9;
+    font-size: 20px;
+    padding: 17px;
+}
+
+
+#friend{
+    color: lightgreen;
+}
+
+#under {
+    font-size:105%;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#how {
+    text-decoration-style: wavy;
+}
+
+#about {
+    background-color: rgba(300,200,100,0.3);
+    font-size: 15px;
+    width: 7%;
+    height: 5%;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+/*ABOUT US STYLES*/
+
+.chart {
+    height: 300px;
+}
+.profile {
+    width: 190px;
+    padding: 8px 0;
+    border-radius: 10px;
+}
+.theH1{
+    text-align: center;
+}
+.theH3 {
+    display: inline;
+
+}
+.theLi{
+    display: inline;    
+}
+.col-sm-4{
+    text-align: center;
+}
+.theUl{
+    margin-left: 10px;
+    padding:0;
+}
+.holder{
+    text-align: center;
+}
+.centered {
+    text-align: center;
+}
+
+.aboutTime {
+	background-color: rgba(0,0,0,.5);
+	padding: 12px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.githubLink {
+	color: #aacbff;
+	text-decoration: underline;
+}
+.bio {
+	font-size: 18px;
+}
+.aboutAnchor {
+	padding: 7px;
+}
+.currentConditions {
+	font-size: 20px;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+  color: #b6c1d6;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+  color: #b6c1d6;
+}

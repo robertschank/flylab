@@ -1,0 +1,28 @@
+<h3>{{main.currentUser.displayName}}</h3>
+<hr>
+<p><strong>Email:</strong> {{main.currentUser().email}}</p>
+<p><strong>Full Name:</strong> {{main.currentUser().displayName}}</p>
+<!-- <p><strong>Joined:</strong> {{main.currentUser().created}}</p>
+<p><strong>Posts:</strong> {{main.currentUser().posts.length}}</p> -->
+
+<hr>
+<!-- <a href="#" ng-click="profile.showEditForm=true" ng-hide="profile.showEditForm" class="btn btn-default"><i class="fa fa-pencil"></i> Edit Profile</a> -->
+
+
+<h2>SAVED SPOTS</h2>
+<section ng-controller="SpotController as spot">
+	<h4>Coordinates</h4>
+	<ul>
+		<li ng-repeat="places in spot.locations">
+			{{places.coordinates}}
+			<button class="btn btn-danger delete" ng-click="spot.deleteLocation(places)">X</button>
+			<button class="btn btn-warning engage" ng-click="spot.getData(places)">DATA</button>
+		</li>
+	</ul>	
+
+		<div ng-repeat="location in spot.loca">
+	  	<loca
+			location="location"
+	  	></loca>
+		</div>	
+</section> 

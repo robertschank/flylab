@@ -1,0 +1,17 @@
+<h3 class="text-center">Welcome!</h3>
+<hr>
+<form ng-submit="sc.signup()">
+	<div class="form-group">
+	  <input type="text" ng-model="sc.new_user.displayName" class="form-control" placeholder="Full Name" ng-class="{'error': sc.new_user.displayName.length <=4}">
+	</div>
+  <div class="form-group">
+    <input type="text" ng-model="sc.new_user.email" class="form-control" ng-class="{'error': sc.new_user.email.length <=5}" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <input type="password" ng-model="sc.new_user.password" class="form-control" placeholder="Password" required ng-minlength=3 ng-maxlength=30>
+  </div>
+  <input type="submit" value="Sign Up" class="btn btn-block btn-info" ng-disabled="sc.new_user.displayName.length <= 4 || sc.new_user.email.length == null || sc.new_user.password == null">
+</form>
+<br>
+
+<p class="text-muted">Already have an account? <a ui-sref="login">Log in here.</a></p>

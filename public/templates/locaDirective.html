@@ -1,0 +1,69 @@
+<section>
+	<div class="card loca-container">
+		<div class="card-header" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="collapseExample">
+
+			<h4 class="">{{location.current.city_state}} {{location.current.elevation}} <span class="pull-right">{{location.current.temp}}</span><img class="pull-right" src="{{location.current.icon}}"></h4>
+		</div>
+
+		<div class="collapse" id="collapse">
+
+			<ul class="nav nav-tabs">
+			  <li class="active"><a data-toggle="tab" class="dataTab" href="#current">Current Conditions</a></li>
+			  <li><a data-toggle="tab" class="dataTab" href="#fourDay">4 Day Forecast</a></li>
+			</ul>
+			<div class="tab-content">
+			  <div id="current" class="tab-pane fade in active">
+			    <h3>Current Conditions</h3>
+					<ul>
+						<li class="currentConditions">Current Temp: {{location.current.temp}}</li>
+			  		<li class="currentConditions">Feels Like: {{location.current.feels_like}}</li>
+			  		<li class="currentConditions">Pressure: {{location.current.pressure}}</li>
+			  		<li class="currentConditions">Pressure Trend: {{location.current.pressure_trend}}</li>
+			  		<li class="currentConditions">Currently: {{location.current.weather}}</li>
+			  		<li class="currentConditions">Current Wind Direction: {{location.current.wind_dir}}</li>
+			  		<li class="currentConditions">Current Wind MPH: {{location.current.wind_mph}}</li>
+			  	</ul>
+			  	<p>Past 7 Days of Water Flow (cfpm)</p>
+					<canvas id="myChart" class="chart"></canvas>
+			  </div>
+			  <div id="fourDay" class="tab-pane fade">
+			  	<div class="flex-container fourDayContainer">
+						<div id="item-1" class="flex-item">
+							<p class="col-3">{{location.fourDay[0].weekday}}</p>
+							<p class="col-3"><img src="{{location.fourDay[0].icon}}"></p>
+							<p class="col-3">{{location.fourDay[0].conditions}}</p>
+				  		<p class="col-3">High: {{location.fourDay[0].high}}</p>
+				  		<p class="col-3">Low: {{location.fourDay[0].low}}</p>
+				  		<p class="col-3">Max Wind: {{location.fourDay[0].maxwind}}</p>
+
+						</div>
+						<div id="item-2" class="flex-item">
+							<p class="col-3">{{location.fourDay[1].weekday}}</p>
+							<p class="col-3"><img src="{{location.fourDay[1].icon}}"></p>
+							<p class="col-3">{{location.fourDay[1].conditions}}</p>
+				  		<p class="col-3">High: {{location.fourDay[1].high}}</p>
+				  		<p class="col-3">Low: {{location.fourDay[1].low}}</p>
+				  		<p class="col-3">Max Wind: {{location.fourDay[1].maxwind}}</p>
+						</div>
+						<div id="item-3" class="flex-item">
+							<p class="col-3">{{location.fourDay[2].weekday}}</p>
+							<p class="col-3"><img src="{{location.fourDay[2].icon}}"></p>
+							<p class="col-3">{{location.fourDay[2].conditions}}</p>
+				  		<p class="col-3">High: {{location.fourDay[2].high}}</p>
+				  		<p class="col-3">Low: {{location.fourDay[2].low}}</p>
+				  		<p class="col-3">Max Wind: {{location.fourDay[2].maxwind}}</p>				
+						</div>
+						<div id="item-4" class="flex-item">
+							<p class="col-3">{{location.fourDay[3].weekday}}</p>
+							<p class="col-3"><img src="{{location.fourDay[3].icon}}"></p>
+							<p class="col-3">{{location.fourDay[3].conditions}}</p>
+				  		<p class="col-3">High: {{location.fourDay[3].high}}</p>
+				  		<p class="col-3">Low: {{location.fourDay[3].low}}</p>
+				  		<p class="col-3">Max Wind: {{location.fourDay[3].maxwind}}</p>			  			
+						</div>
+			  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
